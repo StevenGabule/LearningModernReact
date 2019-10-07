@@ -1,26 +1,44 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SeasonDisplay from "./SeasonDisplay";
+import Spinner from "./Spinner";
 
-import CommentDetail from "./CommentDetail";
-import ApprovalCard from "./ApprovalCard";
+class App extends React.Component {
 
-const App = () => {
-    return (
-        <div className="ui container comments">
-            <ApprovalCard>
-                <CommentDetail author={"Sam"}/>
-            </ApprovalCard>
+    state = {lat: null, lon: null, errMessage: ''};
 
-            <ApprovalCard>
-                <CommentDetail author={"Alex"}/>
-            </ApprovalCard>
+    /*constructor(props) {
+        super(props);
+        this.state = {lat: null, lon: null};
+    }*/
 
-            <ApprovalCard>
-                <CommentDetail author={"Jane"}/>
-            </ApprovalCard>
+    componentDidMount() {
+        window.navigator
+            .geolocation
+            .getCurrentPosition(
+                position => {
+                    this.setState({lat: position.coords.latitude, lon: position.coords.longitude});
+                },
+                err => this.setState({errMessage: err.message})
+            );
+    }
 
+    renderContent() {
+        if (this.state.errMessage && !this.state.lat) {
+            return <div>Error: {this.state.errMessage}</div>
+        }
+
+        if (!this.state.errMessage && this.state.lat) {
+            return <SeasonDisplay lat={this.state.lat}/>
+        }
+        return <Spinner message={"Please accept location request"}/>
+    }
+
+    render() {
+        return <div className={"border red"}>
+            {this.renderContent()}
         </div>
-    )
-};
+    }
+}
 
 ReactDOM.render(<App/>, document.querySelector('#root'));
