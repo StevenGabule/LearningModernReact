@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81f8ff17-95da-4d23-964c-0cb6f0884382" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/topic-6-understanding-life-component/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/unsplash.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApprovalCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/topic-6-understanding-life-component/ApprovalCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CommentDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/topic-6-understanding-life-component/CommentDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SeasonDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/topic-6-understanding-life-component/SeasonDisplay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Spinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/topic-6-understanding-life-component/Spinner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/SeasonDisplay.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/topic-6-understanding-life-component/css/SeasonDisplay.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +94,7 @@
       <workItem from="1570352943996" duration="1663000" />
       <workItem from="1570371777168" duration="4979000" />
       <workItem from="1570452971304" duration="2838000" />
-      <workItem from="1570844479040" duration="7183000" />
+      <workItem from="1570844479040" duration="11095000" />
     </task>
     <servers />
   </component>
