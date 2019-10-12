@@ -1,27 +1,47 @@
-import React from 'react';
+import React, {Component} from 'react';
 import SearchBar from "./SearchBar";
-import unSplash from "../api/unsplash";
-import ImageList from "./ImageList";
+import youtube from '../api/youtube';
+import VideoList from "./VideoList";
+import VideoDetail from "./VideoDetail";
 
-class App extends React.Component {
-    state = {images: []};
+class App extends Component {
+    state = {videos: [], selectedVideo: null};
 
-    onSearchSubmit = async (term) => {
-        const response = await unSplash.get('/search/photos', {
-            params: {query: term},
+    componentDidMount() {
+        this.onTermSubmit('buildings');
+    }
+
+    onTermSubmit = async term => {
+        const response = await youtube.get('/search', {
+            params: {
+                q: term,
+                part: 'snippet',
+                maxResults: 25,
+                key: 'AIzaSyDkG25Np9zFS0nOnReruGAR4UcK6uKLVt4'
+            }
         });
-        this.setState({images: response.data.results});
+        this.setState({videos: response.data.items, selectedVideo: response.data.items[0]});
     };
 
+    onVideoSelect = (video) => {
+        this.setState({selectedVideo: video})
+    };
 
     render() {
         return (
-            <div className={"ui container"} style={{marginTop: '10px'}}>
-                <SearchBar onSubmit={this.onSearchSubmit}/>
-                <p>Found: {this.state.images.length} images</p>
-                <ImageList images={this.state.images}/>
-            </div>)
+            <div className={"ui container"} style={{marginTop: '20px'}}>
+                <SearchBar onFormSubmit={this.onTermSubmit}/>
+                <div className="ui grid">
+                    <div className="eleven wide column">
+                        <p>I have {this.state.videos.length} videos.</p>
+                        <VideoDetail video={this.state.selectedVideo} />
+                    </div>
+                    <div className="five wide column">
+                        <VideoList onVideoSelect={this.onVideoSelect}  videos={this.state.videos}/>
+                    </div>
+                </div>
+            </div>
+        );
     }
 }
-
 export default App;

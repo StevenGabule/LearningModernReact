@@ -2,11 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81f8ff17-95da-4d23-964c-0cb6f0884382" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CardImage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/ImageList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_APIRequests/components/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_APIRequests/components/SearchBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_APIRequests/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/youtube.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/VideoDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/VideoItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/VideoList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/VideoItem.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ImageList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/unsplash.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_APIRequests/api/unsplash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_APIRequests/components/CardImage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ImageList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_APIRequests/components/ImageList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/ImageList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/_APIRequests/css/ImageList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topic-6-understanding-life-component/ApprovalCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_Understanding-life-component/ApprovalCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topic-6-understanding-life-component/CommentDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_Understanding-life-component/CommentDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topic-6-understanding-life-component/SeasonDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_Understanding-life-component/SeasonDisplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topic-6-understanding-life-component/Spinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_Understanding-life-component/Spinner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topic-6-understanding-life-component/css/SeasonDisplay.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/_Understanding-life-component/css/SeasonDisplay.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topic-6-understanding-life-component/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_Understanding-life-component/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +61,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\John paul\WebstormProjects\jsx\src\APIRequests" />
       <recent name="C:\Users\John paul\WebstormProjects\jsx\src\topic-6-understanding-life-component" />
       <recent name="C:\Users\John paul\WebstormProjects\jsx\src\topic_6" />
     </key>
@@ -93,7 +112,8 @@
       <workItem from="1570352943996" duration="1663000" />
       <workItem from="1570371777168" duration="4979000" />
       <workItem from="1570452971304" duration="2838000" />
-      <workItem from="1570844479040" duration="16129000" />
+      <workItem from="1570844479040" duration="23117000" />
+      <workItem from="1570878129515" duration="3170000" />
     </task>
     <servers />
   </component>

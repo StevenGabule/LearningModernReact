@@ -1,5 +1,5 @@
 import React from 'react';
-import  '../css/ImageList.css';
+import '../css/ImageList.css';
 import CardImage from "./CardImage";
 const ImageList = props => {
     const images = props.images.map((image) => {
